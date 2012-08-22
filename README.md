@@ -38,12 +38,12 @@ Instantiate Bundle in your app/AppKernel.php file
 Configure your application
 
     // app/config.yml
-graybit_markit_up:
-    textareaClass: "bbcode"
-    bbcodeSettingFile: "bundles/graybitmarkitup/lib/sets/default/set.js"
-    bbcodeClass: "mySettings"
-    skinCss: "bundles/graybitmarkitup/lib/skins/markitup/style.css"
-    setsCss: "bundles/graybitmarkitup/lib/sets/default/style.css"
+    graybit_markit_up:
+        textareaClass: "bbcode"
+        bbcodeSettingFile: "bundles/graybitmarkitup/lib/sets/default/set.js"
+        bbcodeClass: "mySettings"
+        skinCss: "bundles/graybitmarkitup/lib/skins/markitup/style.css"
+        setsCss: "bundles/graybitmarkitup/lib/sets/default/style.css"
 
 run the command
 
