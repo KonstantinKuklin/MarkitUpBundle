@@ -1,0 +1,19 @@
+{# Init markitUp #}
+{% javascripts '@GraybitMarkitUpBundle/Resources/public/js/lib/jquery.markitup.min.js' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+{% endjavascripts %}
+{# Settings #}
+<script type="text/javascript" src="{{ asset(config.bbcodeSettingFile) }}"></script>
+<link rel="stylesheet" type="text/css" href="{{ asset(config.skinCss) }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset(config.setsCss) }}" />
+
+
+<script type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function () {
+        $('textarea.{{ config.textareaClass }}').each(function(){
+            $(this).markItUp({{ config.bbcodeClass }}).css('width', '660px');
+        });
+    });
+    //]]>
+</script>
